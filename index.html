@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snake Game - VSCode</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Snake Game</h1>
+    <canvas id="game" width="400" height="400" tabindex="0"></canvas>
+
+    <div class="info">
+      <div>Score: <span id="score">0</span></div>
+      <div>High Score: <span id="high">0</span></div>
+      <div>Speed: <span id="speed">8</span></div>
+    </div>
+
+    <div class="center btn-group">
+      <button id="start" class="btn primary">▶ Start / Restart</button>
+      <button id="pause" class="btn warning">⏸ Pause</button>
+    </div>
+
+    <p class="hint">Use arrow keys or WASD to move.</p>
+  </div>
+
+  <div id="gameOverBox" class="gameover hidden">
+    <div class="panel">
+      <h2>Game Over</h2>
+      <p>Your Score: <span id="finalScore">0</span></p>
+      <p>High Score: <span id="finalHigh">0</span></p>
+      <button id="retryBtn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
